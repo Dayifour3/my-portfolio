@@ -1,13 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Card } from "@/components/ui/card";
-import {
-  Code,
-  LucideIcon,
-  MessageCircle,
-  Rss,
-  StickyNote,
-  Weight,
-} from "lucide-react";
+import { Code, LucideIcon, Rss, StickyNote } from "lucide-react";
 import Link from "next/link";
 import { ContactCard } from "./ContactCard";
 import { Section } from "./Section";
@@ -50,7 +43,7 @@ export const Status = () => {
           <ContactCard
             url="https://wa.me/22379994640?text=Salut!"
             name="Sékou Dayifour"
-            image="https://images.betweentheaxles.net/lamborghini_urus_s_1st_gen_2022/2023-lamborghini-urus-s-00025_x201c4.jpg"
+            image="https://th.bing.com/th/id/OIP.I3QqeH2JKSF72phdrza7LQAAAA?rs=1&pid=ImgDetMain&w=180&h=180&c=7&dpr=1.3"
             mediumImage="https://cdn-icons-png.flaticon.com/128/15713/15713434.png"
             description="contact me"
           />
@@ -62,38 +55,39 @@ export const Status = () => {
 
 const SIDE_PROJECTS: SideProjectProps[] = [
   {
-    Logo: Code, // Remplacez par le chemin vers l'icône de plume
-    title: "Codeline",
+    Logo: Rss, // Remplacez par le chemin vers l'icône de calendrier
+    title: "E-learning",
     description:
-      "Un blog où je partage mes réflexions, mes aventures et mes découvertes.",
-    url: "/",
+      "About Interactive Learning Hub – A modern e-learning platform for seamless course management, student progress tracking, interactive discussions, and assessments. 🚀📚",
+    url: "https://github.com/Dayifour/e-learning",
+  },
+  {
+    Logo: Code, // Remplacez par le chemin vers l'icône de plume
+    title: "Video_downloader",
+    description:
+      "Next.js web application for downloading YouTube videos by specifying the URL and desired quality, using yt-dlp to fetch download links through an intuitive interface.",
+    url: "https://github.com/Dayifour/video_downloader",
   },
   {
     Logo: StickyNote, // Remplacez par le chemin vers l'icône de casserole
-    title: "PowerNote",
+    title: "My-next-blog",
     description:
-      "Une application pour découvrir et partager des recettes délicieuses.",
-    url: "/",
+      "Personal blog built with Next.js, featuring dynamic content, sleek design, and modern web development practices. Follow along as I share my journey, insights, and projects!",
+    url: "https://github.com/Dayifour/my-next-blog",
   },
-  {
-    Logo: Rss, // Remplacez par le chemin vers l'icône de calendrier
-    title: "PowerPost",
-    description:
-      "Une application pour suivre vos habitudes quotidiennes, comme l'exercice, la méditation et la lecture.",
-    url: "/",
-  },
-  {
-    Logo: MessageCircle, // Remplacez par le chemin vers l'icône de liste de choses à faire
-    title: "Chat2Code",
-    description: "Un outil simple pour organiser vos tâches et vos projets.",
-    url: "/",
-  },
-  {
-    Logo: Weight, // Remplacez par le chemin vers l'icône de liste de choses à faire
-    title: "LinkedLeads",
-    description: "Un outil simple pour organiser vos tâches et vos projets.",
-    url: "/",
-  },
+
+  // {
+  //   Logo: MessageCircle, // Remplacez par le chemin vers l'icône de liste de choses à faire
+  //   title: "Chat2Code",
+  //   description: "Un outil simple pour organiser vos tâches et vos projets.",
+  //   url: "/",
+  // },
+  // {
+  //   Logo: Weight, // Remplacez par le chemin vers l'icône de liste de choses à faire
+  //   title: "LinkedLeads",
+  //   description: "Un outil simple pour organiser vos tâches et vos projets.",
+  //   url: "/",
+  // },
 ];
 
 type SideProjectProps = {

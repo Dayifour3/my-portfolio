@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
+import Link from "next/link"
 import { Code } from "./Code";
 import { Section } from "./Section";
-import "./style.css";
 export const Hero = () => {
   return (
     <Section className="flex max-md:flex-col items-start gap-4">
@@ -12,11 +11,7 @@ export const Hero = () => {
         </h2>
         <h3 className="text-3xl font-caption">Software developper</h3>
         <p className="text-base">
-          I love creating web-site with
-          <Link href="https://www.nextjs.com">
-            <Code>Nextjs</Code>, living in
-            <Code>🍀Mali</Code>
-          </Link>
+        I am a <Link href="https://www.nextjs.com"><Code>full-stack developer</Code></Link> with expertise in building scalable and user-friendly applications, living in <Code>🍀Mali</Code>. I focus on creating impactful projects and continuously honing my skills in modern web technologies.
         </p>
       </div>
       <div className="flex-[2] max-md:m-auto round ml-auto">

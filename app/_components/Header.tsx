@@ -16,7 +16,7 @@ export const Header = () => {
         <div className="flex-1" />
         <ul className="flex items-center gap-2">
           <Link
-            href="https://github.com/Dayifour3"
+            href="https://github.com/Dayifour"
             className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
           >
             <GithunIcons size={12} className="text-foreground" />
